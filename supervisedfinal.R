@@ -8,7 +8,7 @@ library(plyr)
 library(ggplot2)
 library(RTextTools)
 library(e1071)
-
+//REad the table
 x <- read.table('5.txt', header=FALSE, sep='\t')
 unique(x$V1)
 x <- x[which(x$V1 %in% c('feedback','service', 'complaint')),]
