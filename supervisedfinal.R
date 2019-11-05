@@ -23,7 +23,7 @@ corpus <- tm_map(corpus, removePunctuation)
 corpus <- tm_map(corpus, stripWhitespace)
 corpus <- tm_map(corpus, removeWords, stopwords('english'))
 
-
+//value of the corpus
 set.seed(10)
 x <- read.table('5.txt', header=FALSE, sep='\t')
 x.rand <- x[sample(1:nrow(x)),]
