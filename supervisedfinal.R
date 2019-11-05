@@ -32,6 +32,7 @@ source <- VectorSource(x.rand$V2)
 corpus <- Corpus(source)
 
 //document to the matrix
+//Also seperate the training and testing phrases
 mat <- DocumentTermMatrix(corpus)
 
 mat4 <- weightTfIdf(mat)
