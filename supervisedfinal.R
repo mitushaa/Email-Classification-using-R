@@ -31,7 +31,7 @@ x.rand <- x.rand[which(x.rand$V1 %in% c('feedback','service', 'complaint')),]
 source <- VectorSource(x.rand$V2)
 corpus <- Corpus(source)
 
-
+//document to the matrix
 mat <- DocumentTermMatrix(corpus)
 
 mat4 <- weightTfIdf(mat)
